@@ -1,0 +1,27 @@
+header, footer{
+    background-color: #215A4f;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+aside{
+    padding-top:5px;
+    font-weight: bold;
+}
+.title{
+    color:steelblue;
+}
+#unorderedlist{
+    color:darkgreen;
+}
+nav{
+    background-color: darkslategray;
+}
+section, article{
+    padding:10px;
+    background-color: bisque;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
