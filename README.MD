@@ -1,2 +1,2 @@
-#Tomb
+#Tomb:
 Here lies my start
