@@ -1,27 +1,226 @@
-header, footer{
+.section-head {
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    width: 250px;
+    height: 80px;
+}
+
+footer {
     background-color: #215A4f;
     color: #ddd;
     padding: 20px;
     text-align: center;
 }
-aside{
-    padding-top:5px;
+
+aside {
+    padding-top: 5px;
     font-weight: bold;
 }
-.title{
-    color:steelblue;
+
+.title {
+    color: steelblue;
 }
-#unorderedlist{
-    color:darkgreen;
+
+#unorderedlist {
+    color: darkgreen;
 }
-nav{
+
+nav {
     background-color: darkslategray;
 }
-section, article{
-    padding:10px;
+
+section,
+article {
+    padding: 10px;
     background-color: bisque;
 }
-img{
+
+img {
     height: 100%;
     width: 100%;
+}
+
+.gg-instagram {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 104px;
+    right: 16px;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px
+}
+
+.gg-instagram:hover {
+    -moz-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
+    -webkit-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
+    box-shadow: 0px 0px 7px rgba(233, 50, 81, 0.9);
+    cursor: pointer;
+}
+
+.gg-instagram::after,
+.gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.gg-instagram::after {
+    border: 2px solid;
+    left: 7.5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    top: 7.5px
+}
+
+.gg-instagram::before {
+    border-radius: 5px;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    right: 2px;
+    top: 2px
+}
+
+.gg-facebook {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 8px;
+    right: 16px;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px
+}
+
+.gg-facebook:hover {
+    -moz-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
+    -webkit-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
+    box-shadow: 0px 0px 7px rgba(16, 31, 243, 0.9);
+    cursor: pointer;
+}
+
+.gg-facebook::after,
+.gg-facebook::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box
+}
+
+.gg-facebook::before {
+    width: 16px;
+    height: 40px;
+    border-left: 8px solid;
+    border-top: 8px solid;
+    border-top-left-radius: 10px;
+    left: 12px
+}
+
+.gg-facebook::after {
+    width: 20px;
+    height: 8px;
+    background: currentColor;
+    top: 14px;
+    left: 8px;
+    transform: skew(-4deg)
+}
+
+.gg-twitter {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 56px;
+    right: 16px;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px
+}
+
+.gg-twitter:hover {
+    -moz-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
+    -webkit-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
+    box-shadow: 0px 0px 7px rgba(16, 243, 243, 0.9);
+    cursor: pointer;
+}
+
+.gg-twitter::after,
+.gg-twitter::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 8px
+}
+
+.gg-twitter::before {
+    width: 18px;
+    height: 28px;
+    border-left: 8px solid;
+    border-bottom: 8px solid;
+    border-bottom-left-radius: 12px;
+    background: linear-gradient(to left, currentColor 24px, transparent 0)no-repeat center 4px/20px 8px;
+    top: 8px
+}
+
+.gg-twitter::after {
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    border-radius: 40px;
+    top: 4px;
+    box-shadow: 14px 8px 0, 14px 24px 0
+}
+
+.gg-mail,
+.gg-mail::after {
+    display: block;
+    box-sizing: border-box;
+    height: 32px;
+    border: 2px solid
+}
+
+.gg-mail:hover {
+    -moz-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
+    -webkit-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
+    box-shadow: 0px 0px 7px rgb(255, 230, 6);
+    cursor: pointer;
+}
+
+.gg-mail {
+    box-sizing: border-box;
+    display: block;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    overflow: hidden;
+    transform: scale(var(--ggs, 1));
+    position: fixed;
+    bottom: 152px;
+    right: 16px;
+    width: 40px;
+    border-radius: 10px
+}
+
+.gg-mail::after {
+    content: "";
+    position: absolute;
+    border-radius: 6px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+    bottom: 14px;
+    right: -7px
 }
